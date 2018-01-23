@@ -1,7 +1,7 @@
 require 'pry'
 
 class Song
-  extend Findable
+    extend Findable::ClassMethods
   attr_accessor :name
   attr_reader :artist, :genre
   @@all = []
