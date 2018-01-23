@@ -1,7 +1,7 @@
 require 'pry'
 
 class Genre
-  extend Concerns::Findable
+  extend Findable
   attr_accessor :name, :songs
   @@all = []
   def initialize(name)
