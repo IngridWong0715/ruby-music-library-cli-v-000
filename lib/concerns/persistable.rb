@@ -6,7 +6,7 @@ module Persistable
   end
   module InstanceMethods
     def save #instance
-      self.class.all << self #self.class.save << self
+      self.class.all << self
     end
   end
 end
