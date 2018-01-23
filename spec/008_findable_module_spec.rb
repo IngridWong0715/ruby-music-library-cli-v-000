@@ -17,7 +17,7 @@ end
 
 describe "Genre" do
   it "extends the Findable module" do
-    genre_extends_concerns_findable = Genre.singleton_class.ancestors.include?(Findable)
+    genre_extends_findable = Genre.singleton_class.ancestors.include?(Findable)
     expect(genre_extends_findable).to be(true)
   end
 end
