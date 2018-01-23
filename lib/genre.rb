@@ -19,9 +19,9 @@ class Genre
     Genre.new(name).tap do |o|
       o.save
     end
-    genre = Genre.new(name)
-    genre.save
-    genre
+    # genre = Genre.new(name)
+    # genre.save
+    # genre
   end
 
   def add_song(song)
