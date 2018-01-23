@@ -16,14 +16,14 @@ class Genre
   end
 
 
-  def self.create(name)
-    Genre.new(name).tap do |o|
-      o.save
-    end
-    # genre = Genre.new(name)
-    # genre.save
-    # genre
-  end
+  # def self.create(name)
+  #   Genre.new(name).tap do |o|
+  #     o.save
+  #   end
+  #   # genre = Genre.new(name)
+  #   # genre.save
+  #   # genre
+  # end
 
   def add_song(song)
     song.genre=(self) if !song.genre
