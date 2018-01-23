@@ -2,6 +2,8 @@ require 'pry'
 
 class Song
   extend Findable::ClassMethods
+  extend Persistable::ClassMethods
+  include Persistable::InstanceMethods
   attr_accessor :name
   attr_reader :artist, :genre
   @@all = []
@@ -15,7 +17,7 @@ class Song
   def self.all
     @@all
   end
-  
+
 
   def self.create(name)
     song = Song.new(name)
