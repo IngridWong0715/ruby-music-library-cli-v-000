@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe "Concerns::Findable" do
+describe "Findable" do
   it "defines a module named Findable" do
     expect(defined?(Findable)).to be_truthy
     expect(Findable).to_not be_a(Class)
@@ -22,7 +22,7 @@ describe "Genre" do
   end
 end
 
-describe "Concerns::Findable" do
+describe "  Findable" do
   let!(:artist) { Artist.create("Slowdive") }
   let!(:genre) { Genre.create("shoegaze") }
 
