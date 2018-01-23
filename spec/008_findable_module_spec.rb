@@ -10,7 +10,7 @@ end
 
 describe "Artist" do
   it "extends the Findable module" do
-    artist_extends_concerns_findable = Artist.singleton_class.ancestors.include?(Findable)
+    artist_extends_findable = Artist.singleton_class.ancestors.include?(Findable)
     expect(artist_extends_findable).to be(true)
   end
 end
