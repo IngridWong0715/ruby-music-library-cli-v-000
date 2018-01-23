@@ -1,5 +1,8 @@
 module Persistable
   module ClassMethods
+    def self.destroy_all #class
+      self.all.clear
+    end
   end
   module InstanceMethods
 
@@ -11,6 +14,4 @@ module Persistable
 end
 
 
-  def self.destroy_all #class
-    self.all.clear
-  end
+
