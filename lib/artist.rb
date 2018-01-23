@@ -12,12 +12,12 @@ class Artist
   def self.all
     @@all
   end
-  
-  def save
+
+  def save #instance
     @@all << self #self.class.save << self
 
   end
-  def self.destroy_all
+  def self.destroy_all #class
     self.all.clear
   end
 
