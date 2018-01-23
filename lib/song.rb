@@ -1,7 +1,7 @@
 require 'pry'
 
 class Song
-    extend Nameable::ClassMethods
+  extend Nameable::ClassMethods
   extend Findable::ClassMethods
   extend Persistable::ClassMethods
   include Persistable::InstanceMethods
