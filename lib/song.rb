@@ -20,11 +20,11 @@ class Song
   end
 
 
-  def self.create(name)
-    song = Song.new(name)
-    song.save
-    song # REVOIR!! basic test: last one.
-  end
+  # def self.create(name)
+  #   song = Song.new(name)
+  #   song.save
+  #   song # REVOIR!! basic test: last one.
+  # end
 
   def artist=(artist)
     @artist = artist
