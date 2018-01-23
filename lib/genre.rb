@@ -1,6 +1,7 @@
 require 'pry'
 
 class Genre
+    extend Nameable::ClassMethods
     extend Findable::ClassMethods
     extend Persistable::ClassMethods
     include Persistable::InstanceMethods
