@@ -1,6 +1,7 @@
 require 'pry'
 
 class Artist
+  extend Nameable::ClassMethods
   extend Findable::ClassMethods
   extend Persistable::ClassMethods
   include Persistable::InstanceMethods
@@ -16,12 +17,7 @@ class Artist
   end
 
 
-  def self.create(name)
-    artist = Artist.new(name)
-    artist.save
-    artist
 
-  end
 
   def add_song(song)
     song.artist=(self) if !song.artist
