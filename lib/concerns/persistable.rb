@@ -1,11 +1,11 @@
 module Persistable
   module ClassMethods
-    def destroy_all 
+    def destroy_all
       self.all.clear
     end
   end
   module InstanceMethods
-    def save #instance
+    def save 
       self.class.all << self
     end
   end
