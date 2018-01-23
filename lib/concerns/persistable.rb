@@ -1,6 +1,6 @@
 module Persistable
   module ClassMethods
-    def destroy_all #class
+    def destroy_all 
       self.all.clear
     end
   end
