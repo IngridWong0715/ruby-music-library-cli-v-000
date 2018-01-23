@@ -22,7 +22,7 @@ describe "Genre" do
   end
 end
 
-describe "  Findable" do
+describe "Findable" do
   let!(:artist) { Artist.create("Slowdive") }
   let!(:genre) { Genre.create("shoegaze") }
 
