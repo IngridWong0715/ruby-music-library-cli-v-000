@@ -1,6 +1,9 @@
 module Nameable
   module ClassMethods
-    def 
+    def create(name)
+      self.new(name).tap do |o|
+        o.save
+      end
   end
 end
 
