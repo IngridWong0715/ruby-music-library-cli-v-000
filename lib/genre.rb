@@ -16,6 +16,9 @@ class Genre
 
 
   def self.create(name)
+    Genre.new(name).tap do |o|
+      o.save
+    end
     genre = Genre.new(name)
     genre.save
     genre
